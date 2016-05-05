@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Evrybit</string>
+    <string name="login_background">login_background</string>
+    <string name="login_image_button">Login_image_button</string>
+    <string name="evrybit_logo">Evrybit_logo</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="login">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+</resources>
