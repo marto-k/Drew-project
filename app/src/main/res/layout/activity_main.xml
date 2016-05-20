@@ -6,7 +6,7 @@
     tools:context="com.evrybit.martin.evrybit.MainActivity">
 
 
-    <ImageView
+    <android.support.v7.widget.AppCompatImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/background"
@@ -16,28 +16,28 @@
         android:layout_alignParentStart="true"
         android:scaleType="fitXY" />
 
-    <ImageButton
+    <android.support.v7.widget.AppCompatImageButton
         android:id="@+id/back_arrow"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/btn_navbar_back2x"
         android:contentDescription="@string/login_image_button"
-        android:background="none"
+        android:background="@null"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <ImageButton
+    <android.support.v7.widget.AppCompatImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Evrybit_logo"
         android:src="@drawable/told_with_evrybit_background_blur_mobile3x"
         android:contentDescription="@string/evrybit_logo"
-        android:background="none"
+        android:background="@null"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/back_arrow" />
 
-    <EditText
+    <android.support.v7.widget.AppCompatEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
@@ -49,7 +49,7 @@
         android:hint="@string/email_address"
         android:textColor="#ffffff" />
 
-    <EditText
+    <android.support.v7.widget.AppCompatEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -62,7 +62,7 @@
         android:hint="@string/password"
         android:textColor="#ffffff" />
 
-    <Button
+    <android.support.v7.widget.ButtonBarLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
@@ -70,16 +70,19 @@
         android:layout_marginTop="30dp"
         android:layout_below="@+id/Password"
         android:layout_centerHorizontal="true" />
-
-    <Button
+    <android.support.v7.widget.ViewStubCompat
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <android.support.v7.widget.ButtonBarLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/forgot_password?"
-        android:id="@+id/button2"
+        android:text="@string/forgot_password"
+        android:id="@+id/forgotpass"
         android:layout_below="@+id/Login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:background="none"
+        android:background="@null"
         android:textColor="#ffffff" />
 
 </RelativeLayout>
